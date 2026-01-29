@@ -14,7 +14,7 @@ Extreme humid heat is projected to increase markedly by the end of the century, 
 
 ## Data
 
-Data is available on Zenodo: (DOI).
+Data is available on Zenodo: 10.5281/zenodo.18418893 .
 
 Three folders:
 
