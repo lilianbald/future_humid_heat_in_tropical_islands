@@ -1,4 +1,5 @@
-# future_humid_heat_in_tropical_islands
+# Small tropical islands also exposed to extreme humid heat by the end of the century
+
 This repository contains the data and codes whose associated results are summarised in the article "Small tropical islands also exposed to extreme humid heat by the end of the century", Bald et al.
 
 ## Title
@@ -14,7 +15,7 @@ Extreme humid heat is projected to increase markedly by the end of the century, 
 
 ## Data
 
-Data is available on Zenodo: 10.5281/zenodo.18418893 .
+Data is available in repository /data/.
 
 Three folders:
 
@@ -24,13 +25,6 @@ Three folders:
   - CMIP6/covar: contains the covariate values for each CMIP6 model, each scenario and for each domain (North Atlantic -- "_Guyane.csv", Southwest Indian -- "_Reunion.csv", South Pacific -- "_NC.csv").
   - CMIP6/GEV: 10-year return levels for each model, each station, each scenario. "all_samples" are needed to compute confidence intervals.
   - CMIP6/heatwaves: characteristics (intensity, duration, frequency) of HHW1 and HHW2 for each station and scenario, in periods 1990-2000 and 2090-2100.
-  - CMIP6/HIM: daily mean HI CMIP6 data for each station, each model, each scenario, over periods 1990-2014 and 2015-2100.
-  - CMIP6/HIN: daily minimum HI CMIP6 data for each station, each model, each scenario, over periods 1990-2014 and 2015-2100.
-  - CMIP6/HIX: daily maximum HI CMIP6 data for each station, each model, each scenario, over periods 1990-2014 and 2015-2100.
-  - CMIP6/hursmax: daily maximum relative humidity CMIP6 data for each station, each model, each scenario, over periods 1985-2014 and 2015-2100.
-  - CMIP6/hursmin: daily minimum relative humidity CMIP6 data for each station, each model, each scenario, over periods 1985-2014 and 2015-2100.
-  - CMIP6/tasmax: daily maximum temperature CMIP6 data for each station, each model, each scenario, over periods 1985-2014 and 2015-2100.
-  - CMIP6/tasmin: daily minimum temperature CMIP6 data for each station, each model, each scenario, over periods 1985-2014 and 2015-2100.
   - CMIP6/LSF: Land-sea fractions for each station and each model, in %.
 - OBS: contains observation data, needed to get final figures.
     - OBS/heatwaves: files containing HHW2 thresholds for Gillot, HHW1 and HHW2 frequencies in Gillot observations, for both 1985-2014 and the decade 1990-2000.
@@ -48,7 +42,7 @@ Six folders:
 - calcul_Heat_Index: Heat_Index.py is a script Python to compute NOAA Heat Index from temperature and relative humidity data.
 - final_figures:
    -  final_figures/main_paper: this folder contains the four notebooks needed to plot the figures of the main paper.
-   -  final_figures/supporting_information: contains the three notebooks needed to plot the figures of the supporting information of the paper.
+   -  final_figures/supporting_information: contains the four notebooks needed to plot the figures of the supporting information of the paper.
 - hhe: calcul_RL_and_RP_with_GEV.py contains the script to calculate return levels and return periods with a non-stationnary GEV fit.
 - hhw_method_1: contains the two scripts to generate HHW1 files.
     - count_hhw1_days.py: compute frequencies of CMIP6 and observation HHW1.
@@ -58,3 +52,7 @@ Six folders:
     - calcul_hhw2_OBS.py: calculate properties of HHW2 found in observations (max intensity, duration, frequency, severity)
     - calcul_uncertainties_count_days_hhw2_CMIP6.py: compute confidence interval for CMIP6 HHW2 frequencies.
     - find_characteristics_hhw2_synthesis.py: compute a synthesis of HHW2 characteristics per decade (max intensity, duration, severity).
+
+## To cite this work
+
+CITATION
